@@ -20,7 +20,7 @@ def main():
 #    local_css("visualization/highlight.css")
 
 #    stt.set_theme({'primary': '#EA6B4F'})
-    st.set_option('deprecation.showfileUploaderEncoding', False)
+#    st.set_option('deprecation.showfileUploaderEncoding', False)
 
     hide_streamlit_style = """
     <style>
