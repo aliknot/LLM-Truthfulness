@@ -168,7 +168,7 @@ class FactCheckerViaWeb():
             prefix_for_it = " ".join(entities)
             query = prefix_for_it + " " + query
 
-        web_pages =  run_web_search(query, True) #:BingSearcher().run_search_for_a_query_and_offset(query, 0)
+        web_pages =  run_web_search(query, False) #:BingSearcher().run_search_for_a_query_and_offset(query, 0)
         web_text = ""
         count = 0
         if web_pages:
