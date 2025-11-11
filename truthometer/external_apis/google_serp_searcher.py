@@ -6,7 +6,7 @@ class GoogleSerpSearcher():
     def __init__(self, api_key=None):
         from truthometer.key_manager import provider_key
         try:
-            self.google_serp_key = provider_key['google_serp']
+            self.google_serp_key = provider_key['google']
         except:
             assert api_key, "you should use your own google serp api key"
             self.google_serp_key = api_key
