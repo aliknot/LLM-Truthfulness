@@ -30,9 +30,9 @@ def adapt_chatgpt_format(text):
             clauses = clauses[1:1000]
             new_clauses = []
             for clause in clauses:
-                pos_semicolon = clause.find(':')
-                remainder = clause[pos_semicolon+2: len(clause)]
-                clause = header + ": " + clause[0:pos_semicolon]  + '. ' + remainder
+                pos_colon = clause.find(':')
+                remainder = clause[pos_colon+2: len(clause)]
+                clause = header + ": " + clause[0:pos_colon]  + '. ' + remainder
                 new_clauses.append(clause)
             normalized_text = '\n'.join(new_clauses)
             return normalized_text
