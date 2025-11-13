@@ -7,3 +7,7 @@ truthometer/langchain/.DS_Store
 truthometer/third_party_models/.DS_Store
 *.pyc
 truthometer/nlp_utils/__pycache__/verb_phrase_processor.cpython-39.pyc
+
+# Ignore files generated during package installation/build
+*.egg-info/
+
